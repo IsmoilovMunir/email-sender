@@ -16,7 +16,7 @@ public class EmailListener {
     public void listen(EmailEventDto event){
         try {
             SimpleMailMessage message = new SimpleMailMessage();
-            message.setFrom("task-tracker@ravenda.tech");
+            message.setFrom("ticket@tehnomir24.ru");
             message.setTo(event.getTo());
             message.setSubject(event.getSubject());
             message.setText(event.getBody());
